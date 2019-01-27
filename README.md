@@ -18,8 +18,13 @@ Get the access token using the code from the previous call
 
 ```curl -X POST --data "code=<CODE>&grant_type=authorization_code&client_id=confidential&redirect_uri=http://localhost:8000/authorized&client_secret=confidential" "http://localhost:8080/oauth/token?response_type=code"```
 
-# Test
+## Test
 
 Test calling the email endpoint
 
 ```curl -vvv -H "Authorization: Bearer <ACCESS_TOKEN>" http://localhost:8080/api/email```
+
+## ToDo
+
+1. Encrypt password
+1. Add permissions and roles per user
