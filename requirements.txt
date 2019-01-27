@@ -1,0 +1,4 @@
+flask
+flask-oauthlib
+flask_sqlalchemy
+sqlalchemy
